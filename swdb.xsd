@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="swCatalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="swEntry"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:unique name="swEntry-ID">
+      <xs:selector xpath="swEntry"/>
+      <xs:field xpath="@ID"/>
+    </xs:unique>
+  </xs:element>
+  <xs:element name="swEntry">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="swDependency"/>
+        <xs:element ref="swManufacturer"/>
+        <xs:element ref="swName"/>
+        <xs:element ref="swSupportedFormats"/>
+        <xs:element ref="swType"/>
+        <xs:element ref="swVersion"/>
+        <xs:element ref="swYear"/>
+      </xs:choice>
+      <xs:attribute name="ID" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="swDependency" type="xs:string"/>
+  <xs:element name="swManufacturer" type="xs:string"/>
+  <xs:element name="swName" type="xs:string"/>
+  <xs:element name="swSupportedFormats">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="swSupportedFormat"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="swSupportedFormat" type="xs:string"/>
+  <xs:element name="swType" type="xs:string"/>
+  <xs:element name="swVersion" type="xs:NMTOKEN"/>
+  <xs:element name="swYear" type="xs:integer"/>
+</xs:schema>
