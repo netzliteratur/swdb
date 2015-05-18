@@ -5,11 +5,11 @@
       <xs:sequence>
         <xs:element maxOccurs="unbounded" ref="swEntry"/>
       </xs:sequence>
-    </xs:complexType>
-    <xs:unique name="swEntry-ID">
-      <xs:selector xpath="swEntry"/>
-      <xs:field xpath="@ID"/>
-    </xs:unique>
+  </xs:complexType>
+  <xs:unique name="swEntry-ID">
+    <xs:selector xpath="swEntry"/>
+    <xs:field xpath="@ID"/>
+  </xs:unique>
   </xs:element>
   <xs:element name="swEntry">
     <xs:complexType mixed="true">
@@ -35,8 +35,12 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="swSupportedFormat" type="xs:string"/>
+  <xs:element name="swSupportedFormat">
+    <xs:complexType mixed="true">
+      <xs:attribute name="quality" use="required"/>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="swType" type="xs:string"/>
-  <xs:element name="swVersion" type="xs:NMTOKEN"/>
+  <xs:element name="swVersion" type="xs:string"/>
   <xs:element name="swYear" type="xs:integer"/>
 </xs:schema>
