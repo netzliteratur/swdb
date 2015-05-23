@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- Version of this file: 4 -->
+<!-- Modification Date: 2015/05/23-->
+<!-- Maintainer: steffen fritz -->
+
 <!-- Copyright (C) 2015  Steffen Fritz
 
 contact mail: swdb AT amp-off.com
@@ -16,18 +20,44 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. -->
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. 
+-->
 
 
-<!-- Naming convention hierarchy swManufacturer: as manufacturer, National Software Reference Library -->
-<!-- Naming convention hierarchy swName: as manufacturer, National Software Reference Library -->
-<!-- swTypes: ancillary, driver, editor, file archiver, operating system, renderer, server -->
-<!-- swSupportedFormat: PRONOM Unique ID -->
-<!-- The quality is calculated by qualcal.py -->
+<!-- Naming Convention
+       hierarchy swManufacturer: as manufacturer, National Software Reference Library
+       hierarchy swName: as manufacturer, National Software Reference Library
+       swTypes: ancillary, driver, editor, file archiver, operating system, renderer, server
+       swSupportedFormat: PRONOM Unique ID
+-->
 
-<!-- Version of this file: 3 -->
-<!-- Date: 2015/05/18-->
-<!-- Maintainer: steffen fritz -->
+<!-- Quality Rating
+       hierarchy: good, information, poor. definitons see below.
+       TODO: ancillary, driver, operating system, server. set to UNDEF until definied.
+       type: renderer
+         good: all information can be read. if provided: style, markup and
+               metadata information are fully part of the presentation
+         information: all information can be read. if provided: style, markup and
+               metadata are not fully part of the presentation
+         poor: most of the information can be read. if provided: style, markup
+               and metadata are not fully part of the presentation
+       type: editor
+         good: all information can be read and edited. if provided: style, markup and
+               metadata information are fully part of the presentation and can be edited.
+         information: all information can be read and edited. if provided: style, markup and
+               metadata are not fully part of the presentation or cannot be
+               fully edited.
+         poor: most of the information can be read and edited. if provided: style, markup
+               and metadata are not fully part of the presentation or cannot be
+               fully edited.
+       type: file archiver
+         good: archive can be fully extracted
+       type: driver
+         good: hardware is fully supported and operating system can fully access the device 
+         poor: hardware is partially supported and operating system can partially access 
+               the device
+-->
+
 
 <swCatalog>
   <swEntry ID="0">
@@ -38,35 +68,35 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swDependency />
     <swYear>2010</swYear>
     <swSupportedFormats>
-      <swSupportedFormat quality="">fmt/14</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/15</swSupportedFormat>
-      <swSupportedFormat quality="" >fmt/16</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/17</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/18</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/19</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/20</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/95</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/144</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/145</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/146</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/147</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/148</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/157</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/158</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/276</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/354</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/476</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/477</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/478</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/479</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/480</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/481</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/488</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/489</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/490</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/491</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/492</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/493</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/14</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/15</swSupportedFormat>
+      <swSupportedFormat quality="good" >fmt/16</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/17</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/18</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/19</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/20</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/95</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/144</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/145</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/146</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/147</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/148</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/157</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/158</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/276</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/354</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/476</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/477</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/478</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/479</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/480</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/481</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/488</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/489</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/490</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/491</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/492</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/493</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="1">
@@ -77,19 +107,19 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swDependency />
     <swYear>2011</swYear>
     <swSupportedFormats>
-      <swSupportedFormat quality="">fmt/289</swSupportedFormat>
+      <swSupportedFormat quality="UNDEF">fmt/289</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="2">
     <swManufacturer>Free Software Foundation, Inc.</swManufacturer>
     <swName>GNU tar</swName>
     <swVersion>1.28</swVersion>
-    <swType>archiver</swType>
+    <swType>file archiver</swType>
     <swDependency />
     <swYear>2014</swYear>
     <swSupportedFormats>
-      <swSupportedFormat quality="">fmt/265</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/266</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/265</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/266</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="3">
@@ -100,34 +130,34 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swDependency>4</swDependency>
     <swYear>2014</swYear>
     <swSupportedFormats>
-      <swSupportedFormat quality="">fmt/11</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/12</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/13</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/41</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/42</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/43</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/44</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/152</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/153</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/154</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/155</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/156</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/353</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/409</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/114</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/115</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/116</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/117</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/118</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/119</swSupportedFormat>
-      <swSupportedFormat quality="">x-fmt/270</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/3</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/4</swSupportedFormat>
-      <swSupportedFormat quality="">x-fmt/208</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/402</swSupportedFormat>
-      <swSupportedFormat quality="">x-fmt/367</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/338</swSupportedFormat>
-      <swSupportedFormat quality="">x-fmt/424</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/11</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/12</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/13</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/41</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/42</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/43</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/44</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/152</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/153</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/154</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/155</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/156</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/353</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/409</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/114</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/115</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/116</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/117</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/118</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/119</swSupportedFormat>
+      <swSupportedFormat quality="good">x-fmt/270</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/3</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/4</swSupportedFormat>
+      <swSupportedFormat quality="good">x-fmt/208</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/402</swSupportedFormat>
+      <swSupportedFormat quality="good">x-fmt/367</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/338</swSupportedFormat>
+      <swSupportedFormat quality="good">x-fmt/424</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="4">
@@ -138,7 +168,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swDependency/>
     <swYear>2014</swYear>/>
     <swSupportedFormats >
-        <swSupportedFormat quality=""/>
+        <swSupportedFormat quality="UNDEF"/>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="5">
@@ -149,8 +179,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swDependency />
     <swYear>2015</swYear>
     <swSupportedFormats>
-      <swSupportedFormat quality="">fmt/199</swSupportedFormat>
-      <swSupportedFormat quality="">fmt/596</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/199</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/596</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="6">
@@ -161,10 +191,10 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swDependency />
     <swYear>2009</swYear>
     <swSupportedFormats>
-      <swSupportedFormat quality="">x-fmt/263</swSupportedFormat>
+      <swSupportedFormat quality="good">x-fmt/263</swSupportedFormat>
     </swSupportedFormats>
-</swEntry>
-<swEntry ID="7">
+  </swEntry>
+  <swEntry ID="7">
     <swManufacturer>Microsoft</swManufacturer>
     <swName>Microsoft Office Word</swName>
     <swVersion>2003 SP3</swVersion>
@@ -172,7 +202,18 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swDependency />
     <swYear>2003</swYear>
     <swSupportedFormats>
-      <swSupportedFormat quality="">fmt/40</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/40</swSupportedFormat>
   </swSupportedFormats>
+  </swEntry>
+  <swEntry ID="8">
+    <swManufacturer>Bram Moolenaar and others</swManufacturer>
+    <swName>vim</swName>
+    <swVersion>7.4</swVersion>
+    <swType>editor</swType>
+    <swDependency />
+    <swYear>2013</swYear>
+    <swSupportedFormats>
+        <swSupportedFormat quality="good">x-fmt/111</swSupportedFormat>
+    </swSupportedFormats>
   </swEntry>
 </swCatalog>
