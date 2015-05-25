@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Version of this file: 4 -->
-<!-- Modification Date: 2015/05/23-->
+<!-- Version of this file: 5 -->
+<!-- Modification Date: 2015/05/25 -->
 <!-- Maintainer: steffen fritz -->
 
 <!-- Copyright (C) 2015  Steffen Fritz
@@ -20,7 +20,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. 
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 -->
 
 
@@ -33,7 +33,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 <!-- Quality Rating
        hierarchy: good, information, poor. definitons see below.
+
        TODO: ancillary, driver, operating system, server. set to UNDEF until definied.
+
        type: renderer
          good: all information can be read. if provided: style, markup and
                metadata information are fully part of the presentation
@@ -53,9 +55,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
        type: file archiver
          good: archive can be fully extracted
        type: driver
-         good: hardware is fully supported and operating system can fully access the device 
-         poor: hardware is partially supported and operating system can partially access 
-               the device
+         good: hardware is fully supported and operating system can fully access the device
+         poor: hardware is partially supported and operating system can partially access
+               the device, e.g. read or write
 -->
 
 
@@ -107,7 +109,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swDependency />
     <swYear>2011</swYear>
     <swSupportedFormats>
-      <swSupportedFormat quality="UNDEF">fmt/289</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/289</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="2">
