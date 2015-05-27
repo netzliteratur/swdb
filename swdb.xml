@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Version of this file: 5 -->
-<!-- Modification Date: 2015/05/25 -->
+<!-- Version of this file: 6 -->
+<!-- Modification Date: 2015/05/27 -->
 <!-- Maintainer: steffen fritz -->
 
 <!-- Copyright (C) 2015  Steffen Fritz
@@ -32,18 +32,18 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 -->
 
 <!-- Quality Rating
-       hierarchy: good, information, poor. definitons see below.
+       hierarchy: good, information, poor. definitions see below.
 
-       TODO: ancillary, driver, operating system, server. set to UNDEF until definied.
+       TODO: ancillary, operating system, server. set to UNDEF until definied.
 
-       type: renderer
+       swType: renderer
          good: all information can be read. if provided: style, markup and
                metadata information are fully part of the presentation
          information: all information can be read. if provided: style, markup and
                metadata are not fully part of the presentation
          poor: most of the information can be read. if provided: style, markup
                and metadata are not fully part of the presentation
-       type: editor
+       swType: editor
          good: all information can be read and edited. if provided: style, markup and
                metadata information are fully part of the presentation and can be edited.
          information: all information can be read and edited. if provided: style, markup and
@@ -52,9 +52,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
          poor: most of the information can be read and edited. if provided: style, markup
                and metadata are not fully part of the presentation or cannot be
                fully edited.
-       type: file archiver
+       swType: file archiver
          good: archive can be fully extracted
-       type: driver
+       swType: driver
          good: hardware is fully supported and operating system can fully access the device
          poor: hardware is partially supported and operating system can partially access
                the device, e.g. read or write
@@ -72,7 +72,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swSupportedFormats>
       <swSupportedFormat quality="good">fmt/14</swSupportedFormat>
       <swSupportedFormat quality="good">fmt/15</swSupportedFormat>
-      <swSupportedFormat quality="good" >fmt/16</swSupportedFormat>
+      <swSupportedFormat quality="good">fmt/16</swSupportedFormat>
       <swSupportedFormat quality="good">fmt/17</swSupportedFormat>
       <swSupportedFormat quality="good">fmt/18</swSupportedFormat>
       <swSupportedFormat quality="good">fmt/19</swSupportedFormat>
