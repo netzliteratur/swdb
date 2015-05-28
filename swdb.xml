@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Version of this file: 6 -->
-<!-- Modification Date: 2015/05/27 -->
+<!-- Version of this file: 7 -->
+<!-- Modification Date: 2015/05/28 -->
 <!-- Maintainer: steffen fritz -->
 
 <!-- Copyright (C) 2015  Steffen Fritz
@@ -34,6 +34,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 <!-- Quality Rating
        hierarchy: good, information, poor. definitions see below.
 
+       As swdb pursues a generalized approach, the lowest quality value
+       determines the quality value of identical file types in identical environments.
+       
        TODO: ancillary, operating system, server. set to UNDEF until definied.
 
        swType: renderer
@@ -216,6 +219,18 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swYear>2013</swYear>
     <swSupportedFormats>
         <swSupportedFormat quality="good">x-fmt/111</swSupportedFormat>
+    </swSupportedFormats>
+  </swEntry>
+  <swEntry ID="9">
+    <swManufacturer>The Document Foundation</swManufacturer>
+    <swName>LibreOffice Writer</swName>
+    <swVersion>4.4.3</swVersion>
+    <swType>editor</swType>
+    <swDependency />
+    <swYear>2015</swYear>
+    <swSupportedFormats>
+        <swSupportedFormat quality="good">fmt/290</swSupportedFormat>
+        <swSupportedFormat quality="information">fmt/40</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
 </swCatalog>
