@@ -7,5 +7,5 @@ identical to PREMIS v2.2 (http://www.loc.gov/standards/premis/), except swYear, 
 A corpus of example files is processed with FIDO (http://openpreservation.org/technology/products/fido/) to determine the PUID. In a second step the files are rendered/opened/processed/edited on different operating systems with the listed software products. If it succeeds, the quality is rated. For more information see the comment section in swdb.xml
 
 As swdb pursues a generalized approach, the lowest quality value
-determines the quality value of identical file types in identical environments
+determines the quality value of identical file types in identical environments.
 
