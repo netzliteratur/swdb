@@ -25,8 +25,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 
 <!-- Naming Convention
-       hierarchy swManufacturer: as manufacturer, National Software Reference Library
-       hierarchy swName: as manufacturer, National Software Reference Library
+       hierarchy for swManufacturer: as manufacturer, National Software Reference Library
+       hierarchy for swName: as manufacturer, National Software Reference Library
        swTypes: ancillary, driver, editor, file archiver, operating system, renderer, server
        swSupportedFormat: PRONOM Unique ID
 -->
@@ -34,27 +34,27 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 <!-- Quality Rating
        hierarchy: good, information, poor. definitions see below.
 
-       As swdb pursues a generalized approach, the lowest quality value
-       determines the quality value of identical file types in identical environments.
+       swdb pursues a generalized approach. Thus the lowest quality will be chosen, if identical file types in 
+       identical environments give different results.
        
        TODO: ancillary, operating system, server. set to UNDEF until definied.
 
        swType: renderer
-         good: all information can be read. if provided: style, markup and
-               metadata information are fully part of the presentation
-         information: all information can be read. if provided: style, markup and
-               metadata are not fully part of the presentation
-         poor: most of the information can be read. if provided: style, markup
-               and metadata are not fully part of the presentation
+         good: all information is rendered. if provided: style, markup and
+               metadata information are fully  represented
+         information: all information is rendered. if provided: style, markup and
+               metadata are not or only partially represented
+         poor: most of the information is rendered. if provided: style, markup
+               and metadata are not or only partially represented
        swType: editor
-         good: all information can be read and edited. if provided: style, markup and
-               metadata information are fully part of the presentation and can be edited.
-         information: all information can be read and edited. if provided: style, markup and
-               metadata are not fully part of the presentation or cannot be
-               fully edited.
-         poor: most of the information can be read and edited. if provided: style, markup
-               and metadata are not fully part of the presentation or cannot be
-               fully edited.
+         good: all information can be rendered and edited. if provided: style, markup and
+               metadata information are fully represented and can be edited.
+         information: all information can be rendered and edited. if provided: style, markup and
+               metadata are not or only partially represented or cannot be
+               edited.
+         poor: most of the information can be rendered and edited. if provided: style, markup
+               and metadata are not or only partially represented or cannot be
+               edited.
        swType: file archiver
          good: archive can be fully extracted
        swType: driver
