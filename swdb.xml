@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Version of this file: 8 -->
-<!-- Modification Date: 2015/05/30 -->
+<!-- Version of this file: 9 -->
+<!-- Modification Date: 2015/06/03 -->
 <!-- Maintainer: steffen fritz -->
 <!-- Contributors: steffen fritz. stephanie kuch. -->
 
@@ -232,6 +232,28 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swSupportedFormats>
         <swSupportedFormat quality="good">fmt/290</swSupportedFormat>
         <swSupportedFormat quality="information">fmt/40</swSupportedFormat>
+    </swSupportedFormats>
+  </swEntry>
+  <swEntry ID="10">
+    <swManufacturer>The Document Foundation</swManufacturer>
+    <swName>LibreOffice Calc</swName>
+    <swVersion>4.4.3</swVersion>
+    <swType>editor</swType>
+    <swDependency />
+    <swYear>2015</swYear>
+    <swSupportedFormats>
+        <swSupportedFormat quality="good">fmt/62</swSupportedFormat>
+    </swSupportedFormats>
+  </swEntry>
+  <swEntry ID="11">
+    <swManufacturer>KDE e.V.</swManufacturer>
+    <swName>Okular</swName>
+    <swVersion>0.22.2</swVersion>
+    <swType>renderer</swType>
+    <swDependency />
+    <swYear>2009</swYear>
+    <swSupportedFormats>
+        <swSupportedFormat quality="good">fmt/18</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
 </swCatalog>
