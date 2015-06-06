@@ -220,6 +220,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swYear>2013</swYear>
     <swSupportedFormats>
         <swSupportedFormat quality="good">x-fmt/111</swSupportedFormat>
+        <swSupportedFormat quality="good">fmt/101</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="9">
@@ -232,6 +233,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swSupportedFormats>
         <swSupportedFormat quality="good">fmt/290</swSupportedFormat>
         <swSupportedFormat quality="information">fmt/40</swSupportedFormat>
+        <swSupportedFormat quality="good">fido-fmt/189.word</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
   <swEntry ID="10">
@@ -254,6 +256,18 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swYear>2009</swYear>
     <swSupportedFormats>
         <swSupportedFormat quality="good">fmt/18</swSupportedFormat>
+        <swSupportedFormat quality="good">fido-fmt/189.word</swSupportedFormat>
+    </swSupportedFormats>
+  </swEntry>
+  <swEntry ID="12">
+    <swManufacturer>Microsoft</swManufacturer>
+    <swName>Microsoft Office 2011 for Mac</swName>
+    <swVersion>14.5.1</swVersion>
+    <swType>editor</swType>
+    <swDependency />
+    <swYear>2011</swYear>
+    <swSupportedFormats>
+        <swSupportedFormat quality="good">fido-fmt/189.word</swSupportedFormat>
     </swSupportedFormats>
   </swEntry>
 </swCatalog>
