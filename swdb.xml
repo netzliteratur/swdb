@@ -64,6 +64,12 @@ with this program; if not, write to the Free Software Foundation, Inc.,
                the device, e.g. read or write
 -->
 
+<!-- Repeatability of software products
+       An entry can be repeated if it differs in swType. This occurs if an
+       editor can render but not edit a file or if it cannot save modifications
+       properly.
+
+-->
 
 <swCatalog>
   <swEntry ID="0">
@@ -266,6 +272,17 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <swType>editor</swType>
     <swDependency />
     <swYear>2011</swYear>
+    <swSupportedFormats>
+        <swSupportedFormat quality="good">fido-fmt/189.word</swSupportedFormat>
+    </swSupportedFormats>
+  </swEntry>
+  <swEntry ID="13">
+    <swManufacturer>KDE e.V.</swManufacturer>
+    <swName>Calligra Words</swName>
+    <swVersion>2.9.5</swVersion>
+    <swType>renderer</swType>
+    <swDependency />
+    <swYear>2015</swYear>
     <swSupportedFormats>
         <swSupportedFormat quality="good">fido-fmt/189.word</swSupportedFormat>
     </swSupportedFormats>
