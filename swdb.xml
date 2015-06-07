@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Version of this file: 9 -->
-<!-- Modification Date: 2015/06/03 -->
+<!-- Version of this file: 10 -->
+<!-- Modification Date: 2015/06/06 -->
 <!-- Maintainer: steffen fritz -->
 <!-- Contributors: steffen fritz. stephanie kuch. -->
 
@@ -37,7 +37,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
        swdb pursues a generalized approach. Thus the lowest quality will be chosen, if identical file types in 
        identical environments give different results.
-       
+
        TODO: ancillary, operating system, server. set to UNDEF until definied.
 
        swType: renderer
